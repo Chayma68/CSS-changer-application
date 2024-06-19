@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css changer application</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>change the CSS of below image withe the help of the sliders</h1>
+        <span class="heading"> JavaScript</span>
+        <div class="css-controller">
+            <label for="base"> Base Color</label>
+            <input type="color" name="base" id="base" value="#ff000">
+            <label for="width"> Width</label>
+            <input type="range" id="width" name="width" min="0" max="100" value="30" data-sizing="%">
+            <label for="border-radius"> border-radius</label>
+            <input type="range" id="border-radius" name="border-radius" min="0" max="100" value="5" data-sizing="px">
+            <label for="padding"> padding</label>
+            <input type="range" id="padding" name="padding" min="0" max="100" value="0" data-sizing="%">
+            <label for="blur"> blur</label>
+            <input type="range" id="blur" name="blur" min="0" max="25" value="0" data-sizing="px">
+
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2023/08/15/15/48/swan-8192196_640.jpg" alt="">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
